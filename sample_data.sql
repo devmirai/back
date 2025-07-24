@@ -18,7 +18,7 @@ VALUES
 INSERT INTO ticket_types (id, event_id, name, description, price, quantity_available, quantity_sold, benefits, created_at)
 VALUES
   (1, 1, 'General', 'Entrada general', 50000, 4000, 0, NULL, NOW()),
-  (2, 1, 'VIP', 'Entrada VIP', 120000, 1000, 0, NULL, NOW()),
+  (2, 1, 'VIP', 'Entr ada VIP', 120000, 1000, 0, NULL, NOW()),
   (3, 2, 'Entrada', 'Entrada estándar', 30000, 2000, 0, NULL, NOW());
 
 -- Órdenes

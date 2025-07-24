@@ -204,6 +204,9 @@ def create_order():
                 )
                 db.session.add(ticket)
                 created_tickets.append(ticket)
+            # Restar la cantidad comprada al evento
+            event.available_tickets = event.available_tickets - quantity
+            db.session.add(event)
 
         db.session.commit()  # Ahora los tickets tienen id
 
